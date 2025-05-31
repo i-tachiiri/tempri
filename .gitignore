@@ -5,3 +5,16 @@ obj/
 bin/
 Archive/PrintSiteBuilder/AmazonService/Auth.cs
 TextToSpeechGenerator/Program.cs
+packages/
+
+# Visual Studio
+.vs/
+*.user
+*.suo
+*.cache
+*.dbmdl
+*.VC.db
+*.vscode/
+
+# VSCode
+.vscode/
