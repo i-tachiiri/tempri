@@ -1,0 +1,6 @@
+@TempriApi_HostAddress = http://localhost:5160
+
+GET {{TempriApi_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

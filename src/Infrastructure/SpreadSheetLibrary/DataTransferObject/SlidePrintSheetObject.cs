@@ -1,0 +1,11 @@
+﻿namespace SpreadSheetLibrary.DataTransferObject
+{
+    public class SlidePrintSheetObject
+    {
+        public int PrintId { get; set; }
+        public string PrintName { get; set; }
+        public int PageCount { get; set; }
+        public string PresentationId { get; set; }
+        public string PresentationUrl { get; set; }
+    }
+}
