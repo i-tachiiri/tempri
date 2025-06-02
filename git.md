@@ -22,4 +22,4 @@ test: ユニットテストを追加
 docs: READMEに起動手順を追記
 chore: .gitignoreを整理
 
-## コメント追加
+## コメント
