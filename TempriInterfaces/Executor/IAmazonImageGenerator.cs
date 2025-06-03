@@ -1,5 +1,5 @@
 using TempriDomain.Entity;
-namespace PrintCoverGenerator.Interfaces.Services;
+namespace TempriInterfaces.Executor;
 public interface IAmazonImageGenerator
 {
     Task GenerateImage(PrintMasterEntity master);

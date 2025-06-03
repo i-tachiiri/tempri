@@ -29,7 +29,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleLibrary", "src\Infra
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DocumentLibrary", "src\Infrastructure\DocumentLibrary\DocumentLibrary.csproj", "{9CF48DA3-28D5-4B5B-A2BF-BC54626F4DA5}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExplorerLibrary", "src\Infrastructure\ExplorerLibrary\ExplorerLibrary.csproj", "{96DD4342-9798-4426-BA6D-5F39B841CE4A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FileSystemLibrary", "src\Infrastructure\ExplorerLibrary\FileSystemLibrary.csproj", "{96DD4342-9798-4426-BA6D-5F39B841CE4A}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GoogleDriveLibrary", "src\Infrastructure\GoogleDriveLibrary\GoogleDriveLibrary.csproj", "{B085EB6A-1E46-48B0-B95C-6063659C45C2}"
 EndProject
@@ -98,9 +98,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Document", "Document", "{02
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Shared", "Shared", "{B2993320-0925-48A5-981E-A17BE4945F81}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Helpers", "Helpers", "{77131060-9C10-4A1C-9752-5FA9150A7D62}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PrintPathBuilder", "src\Application\Shared\PathBuilder\PrintPathBuilder.csproj", "{2AF7730C-B724-4F68-81C2-F3E4E32C7B20}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PathBuilder", "src\Application\Shared\PathBuilder\PathBuilder.csproj", "{2AF7730C-B724-4F68-81C2-F3E4E32C7B20}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TempriInterfaces", "TempriInterfaces\TempriInterfaces.csproj", "{3C0C8BE3-D678-4D11-B7F5-237ABE7A3983}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -256,6 +256,10 @@ Global
 		{2AF7730C-B724-4F68-81C2-F3E4E32C7B20}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2AF7730C-B724-4F68-81C2-F3E4E32C7B20}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2AF7730C-B724-4F68-81C2-F3E4E32C7B20}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3C0C8BE3-D678-4D11-B7F5-237ABE7A3983}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3C0C8BE3-D678-4D11-B7F5-237ABE7A3983}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3C0C8BE3-D678-4D11-B7F5-237ABE7A3983}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3C0C8BE3-D678-4D11-B7F5-237ABE7A3983}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -300,8 +304,8 @@ Global
 		{D6984607-7A00-4EC7-ACE7-1B215032E4D6} = {43C9B64F-8D7E-4406-BB88-2FCF118869CE}
 		{42D406D8-F75D-44C2-A0AF-D1EC91A9F8B0} = {FEA038D7-CEFC-4D5A-8D51-6CF7562A6F91}
 		{B2993320-0925-48A5-981E-A17BE4945F81} = {A1E602E7-CE1D-4290-80FF-530991A72309}
-		{77131060-9C10-4A1C-9752-5FA9150A7D62} = {B2993320-0925-48A5-981E-A17BE4945F81}
-		{2AF7730C-B724-4F68-81C2-F3E4E32C7B20} = {77131060-9C10-4A1C-9752-5FA9150A7D62}
+		{2AF7730C-B724-4F68-81C2-F3E4E32C7B20} = {B2993320-0925-48A5-981E-A17BE4945F81}
+		{3C0C8BE3-D678-4D11-B7F5-237ABE7A3983} = {B2993320-0925-48A5-981E-A17BE4945F81}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {5BBB74A4-8673-45E0-AE31-6C915A621438}

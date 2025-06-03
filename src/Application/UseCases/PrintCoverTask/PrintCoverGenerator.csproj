@@ -7,6 +7,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\..\..\TempriInterfaces\TempriInterfaces.csproj" />
     <ProjectReference Include="..\..\..\Domain\TempriDomain\TempriDomain.csproj" />
   </ItemGroup>
 

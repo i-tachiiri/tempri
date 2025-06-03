@@ -1,9 +1,9 @@
-﻿using PrintCoverGenerator.Interfaces.Infrastructure;
-using PrintCoverGenerator.Interfaces.Services;
-using PrintCoverGenerator.Interfaces.UseCases;
+﻿using TempriInterfaces.Infrastructure;
+using TempriInterfaces.Executor;
+using TempriInterfaces.Coordinator;
 using TempriDomain.Entity;
 
-namespace PrintCoverGenerator.Implements.UseCases;
+namespace PrintCoverGenerator.Coordinator;
 
 public class PrintCoverUseCase(
     IEcBaseGenerator ecBaseGenerator,

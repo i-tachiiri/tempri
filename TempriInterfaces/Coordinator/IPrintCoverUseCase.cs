@@ -1,5 +1,5 @@
 ﻿using TempriDomain.Entity;
-namespace PrintCoverGenerator.Interfaces.UseCases;
+namespace TempriInterfaces.Coordinator;
 public interface IPrintCoverUseCase
 {
     Task Run(PrintMasterEntity master, bool isTestCase);

@@ -1,7 +1,7 @@
 ﻿using PrintCoverGenerator.Interfaces.Services;
 using TempriDomain.Entity;
 
-namespace PrintCoverGenerator.Implements.Orchestrators;
+namespace PrintCoverGenerator.Executor;
 
 public class EcBaseGenerator : IEcBaseGenerator
 {

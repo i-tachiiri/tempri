@@ -3,7 +3,7 @@ using PrintCoverGenerator.Interfaces.Services;
 using TempriDomain.Config;
 using TempriDomain.Entity;
 
-namespace PrintCoverGenerator.Implements.Orchestrators;
+namespace PrintCoverGenerator.Executor;
 
 public class AmazonImageGenerator(IImageService imageService, IUploadService uploadService, IAmazonSlideRepository amazonSheetRepository,
     IDeleteService deleteService, IAuthorityService authorityService, IExportService exportService, IPageService pageService)

@@ -24,7 +24,7 @@
   <ItemGroup>
     <ProjectReference Include="..\..\Domain\BlogDomain\BlogDomain.csproj" />
     <ProjectReference Include="..\..\Domain\MathDomain\MathDomain.csproj" />
-    <ProjectReference Include="..\..\Infrastructure\ExplorerLibrary\ExplorerLibrary.csproj" />
+    <ProjectReference Include="..\..\Infrastructure\ExplorerLibrary\FileSystemLibrary.csproj" />
     <ProjectReference Include="..\..\Infrastructure\GoogleSearchConsoleLibrary\GoogleSearchConsoleLibrary.csproj" />
     <ProjectReference Include="..\..\Infrastructure\GoogleTtsLibrary\GoogleTtsLibrary.csproj" />
     <ProjectReference Include="..\..\Infrastructure\LolipopLibrary\LolipopLibrary.csproj" />
