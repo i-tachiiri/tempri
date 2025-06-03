@@ -91,7 +91,7 @@ namespace ConsoleLibrary.Repository
         {
             string taskName = task.Method.Name;
             string ExecutionMode = IsTestCase ? "[test]" : "";
-            WriteLog($"[{entity.PrintId}] {taskName} ...");
+            WriteLog($"[{entity.PrintId}]{ExecutionMode} {taskName} ...");
             try
             {
                 await task(entity, IsTestCase);
