@@ -1,25 +1,24 @@
+## 作業概要
 
-## ��ƊT�v
+1. ブランチ一覧を確認する
+2. 開発するブランチを作成/決定する
+1. ブランチを切り替える
+1. プルリクエストを作成する
 
-1. �u�����`�ꗗ���m�F����
-2. �J������u�����`���쐬/���肷��
-1. �u�����`���J��
-1. 
+## ブランチ作成
 
-## �u�����`�쐬
+git checkout main			# mainブランチに切り替え
+git pull origin main	# 最新のmainブランチを取得
+git checkout -b develop		# developブランチを作成
+git push -u origin develop	# 今のブランチとリモートのdevelopブランチを紐づけ
 
-git checkout main				# main�u�����`�ɐ؂�ւ�
-git pull origin main            # �ŐV��main�u�����`���擾
-git checkout -b develop			# develop�u�����`���쐬
-git push -u origin develop      # ���̃u�����`�ƃ����[�g��develop�u�����`��R�Â�
+# コミットのプレフィックス
 
-# �R�~�b�g�̃v���t�B�b�N�X
+feat: ユーザー登録画面を作成
+fix: ログイン時にクラッシュする問題を修正
+refactor: PrintEntityの責務を分離
+test: ユニットテストを追加
+docs: READMEに起動手順を追記
+chore: .gitignoreを整理
 
-feat: ���[�U�[�o�^��ʂ��쐬
-fix: ���O�C�����ɃN���b�V����������C��
-refactor: PrintEntity�̐Ӗ��𕪗�
-test: ���j�b�g�e�X�g��ǉ�
-docs: README�ɋN���菇��ǋL
-chore: .gitignore�𐮗�
-
-## �R�����g
+## コメント
