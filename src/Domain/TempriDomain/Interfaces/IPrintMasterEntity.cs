@@ -26,10 +26,10 @@ namespace TempriDomain.Interfaces
         public string pinkoi_en { get; set; }
         public List<IQuestionMasterEntity> questions { get; set; }
         public List<IWorksheetMasterEntity> worksheets { get; set; }
-        public string GetDirectory(int PrintId,string FolderName)
+        /*public string GetDirectory(int PrintId,string FolderName)
         {
             return Path.Combine(TempriConstants.BaseDir, PrintId.ToString(),FolderName);
-        }
+        }*/
         
     }
 }

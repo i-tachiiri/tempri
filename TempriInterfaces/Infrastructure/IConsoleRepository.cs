@@ -1,4 +1,4 @@
-namespace PrintCoverGenerator.Interfaces.Infrastructure;
+namespace TempriInterfaces.Infrastructure;
 public interface IConsoleRepository
 {
     void TaskLog<T>(Action<T> action, T parameter);

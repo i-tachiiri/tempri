@@ -1,6 +1,6 @@
 using TempriDomain.Entity;
 
-namespace PrintCoverGenerator.Interfaces.Services;
+namespace TempriInterfaces.Executor;
 public interface IEcBaseGenerator
 {
     void Convert2Pngs(PrintMasterEntity master);

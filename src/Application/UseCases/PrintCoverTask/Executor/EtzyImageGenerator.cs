@@ -3,7 +3,7 @@ using PrintCoverGenerator.Interfaces.Services;
 using TempriDomain.Config;
 using TempriDomain.Entity;
 
-namespace PrintCoverGenerator.Implements.Orchestrators;
+namespace PrintCoverGenerator.Executor;
 public class EtzyImageGenerator(IImageService imageService, IUploadService uploadService, IEtzySlideRepository etzySlideRepository,
     IEtzyThumbSlideRepository etzyThumbSlideRepository, IDeleteService deleteService, IAuthorityService authorityService,
     IExportService exportService, IPageService pageService) : IEtzyImageGenerator

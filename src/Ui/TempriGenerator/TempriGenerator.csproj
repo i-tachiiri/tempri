@@ -16,7 +16,7 @@
   <ItemGroup>
     <ProjectReference Include="..\..\Domain\MathDomain\MathDomain.csproj" />
     <ProjectReference Include="..\..\Domain\TempriDomain\TempriDomain.csproj" />
-    <ProjectReference Include="..\..\Infrastructure\ExplorerLibrary\ExplorerLibrary.csproj" />
+    <ProjectReference Include="..\..\Infrastructure\ExplorerLibrary\FileSystemLibrary.csproj" />
     <ProjectReference Include="..\..\Infrastructure\MysqlLibrary\MysqlLibrary.csproj" />
     <ProjectReference Include="..\..\Infrastructure\NotionLibrary\NotionLibrary.csproj" />
 
