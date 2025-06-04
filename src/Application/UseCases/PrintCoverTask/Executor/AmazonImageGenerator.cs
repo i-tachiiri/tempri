@@ -1,12 +1,12 @@
-﻿using PrintCoverGenerator.Interfaces.Infrastructure;
-using PrintCoverGenerator.Interfaces.Services;
-using TempriDomain.Config;
+﻿using TempriDomain.Config;
 using TempriDomain.Entity;
+using TempriInterfaces.Executor;
+using TempriInterfaces.Infrastructure;
 
 namespace PrintCoverGenerator.Executor;
 
 public class AmazonImageGenerator(IImageService imageService, IUploadService uploadService, IAmazonSlideRepository amazonSheetRepository,
-    IDeleteService deleteService, IAuthorityService authorityService, IExportService exportService, IPageService pageService)
+    IDeleteService deleteService, IAuthorityService authorityService, IExportService exportService, IPageService pageService,IBaseDirectoryProvider baseDirectoryProvider)
     : IAmazonImageGenerator
 {
 
@@ -19,7 +19,7 @@ public class AmazonImageGenerator(IImageService imageService, IUploadService upl
     }
     public async Task ReplaceAnswerImage(PrintMasterEntity print)
     {
-        var LocalPath = Path.Combine(print.GetDirectory(print.PrintId, "ec-base"), "answer.png");
+        var LocalPath = Path.Combine(baseDirectoryProvider.GetBaseDirectory(print.PrintId, "ec-base"), "answer.png");
         var ImagePath = await uploadService.UploadImage(LocalPath, TempriConstants.CacheFolderId);
         //var PresentationId = await amazonSheetRepository.GetPresentationId(print.PrintId.ToString());
         var PresentationId = print.AmazonSlideId;

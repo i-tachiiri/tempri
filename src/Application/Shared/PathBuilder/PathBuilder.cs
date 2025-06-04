@@ -1,13 +1,15 @@
 ﻿
+using TempriInterfaces.Infrastructure;
+
 namespace PrintPathBuilder;
 
-public class PathBuilder
+public class PathBuilder(IBaseDirectoryProvider baseDirectoryProvider)
 {
-    public static string GetDirectory(int printId, string folderName)
+    public string GetDirectory(int printId, string folderName)
     {
-        return Path.Combine(TempriConstants.BaseDir, printId.ToString(), folderName);
+        return Path.Combine(baseDirectoryProvider.GetBaseDirectory(), printId.ToString(), folderName);
     }
-    public static string GetPrintFilePath(int printId, string fileName)
+    public string GetPrintFilePath(int printId, string fileName)
     {
         return Path.Combine(GetDirectory(printId, "ec-base"), fileName);
     }
